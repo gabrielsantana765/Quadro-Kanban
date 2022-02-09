@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Quadro Kanban</title>
+		<meta name="description" content="Quadro Kanabn para organização">
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+<!--  -->
+	<body>
+		<section class="quadros" > <!-- Seção dos 3 quadros -->
+			<div class="coluna">
+				<h2>A FAZER</h2>
+				<div class="soltar" id="aFazer">
+
+					<div class="cataoSolto" draggable="true">
+	          			<div class="situacao aFazer"></div>
+	          			<div class="atribuido">Nome</div>
+	          			<div class="content">TESTE</div>
+        			</div>
+
+				</div>
+			</div>
+
+			<div class="coluna">
+				<h2>FAZENDO</h2>
+				<div class="soltar" id="FAZENDO">
+					
+				</div>
+			</div>
+
+			<div class="coluna">
+				<h2>FEITO</h2>
+				<div class="soltar" id="FEITO">
+					
+				</div>
+			</div>
+		</section >
+
+		<section class= "incluirCartao">
+			<div class="cartao">
+				<h2><label for="cartao">Adicionar Cartão</label></h2>
+      			<form id="adiconarCartao" action="POST">
+      				<div class="allcard">
+      				<h3>Responsável</h3>
+					<input id="usuario" name="usuario" type="text" autocomplete="off">	
+      				<h3>Tarefa</h3>
+      				<input id="cartao" name="cartao" type="text" autocomplete="off">
+					</div>
+					<div class="buttonCard">
+					<button type="submit"><img src="./img/plus.svg" alt="Add task" /></button>
+					</div>
+					
+      			</form>
+			</div>
+
+			<div class="LIXO">
+      			<h2>LIXO</h2>
+      		<div class="soltar" id="LIXO">
+      		</div>
+      	</section>
+		<script type="text/javascript" src="./js/script.js" defer></script>
+
+	</body>
+</html>

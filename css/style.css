@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+	background-color: #ffff00;
+	color: #330000;
+
+	width: 100vw;
+  	min-height: 100vh;
+  	padding: 2% 3%;
+
+  	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
+
+  	overflow-x: hidden;
+}
+
+.quadros{
+	width: 100%;
+	flex: 1;
+	display: flex;
+	min-height: 100%;
+	justify-content: space-between;
+}
+
+.coluna{
+	width: 32%;
+	min-height: 100%;
+	margin: 0 3%;
+	background-color: #ffff66;
+	border: 3px solid #5391c7;
+	border-radius: 20px;
+}
+
+.coluna h2{
+ 	text-align: center;
+	padding: 30px 15px 15px 15px;
+	color: #5391c7;
+}
+
+.soltar{
+  
+}
+
+.cataoSolto{
+	width: 95%;
+	height: auto;
+	margin: auto auto;
+	margin-bottom: 6%;
+	background-color: #5391c7;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 18px;
+	word-wrap: break-word;
+	transition: .2s;
+}
+
+.cataoSolto:hover{
+  cursor: move;
+}
+
+.incluirCartao{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#adiconarCartao{
+    display: flex;
+}
+
+.allcard{
+  display: flex;
+  flex-direction: column;
+}
+
+.cartao{
+	width: 33%;
+	height: auto;
+	margin: 20px;
+	background-color: #5391c7;
+  border: 3px solid #539177;
+  border-radius: 5px;
+
+}
+ .buttonCard{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 7%
+ }
+
+.cartao h2{
+  text-align: center;
+  padding:5px;
+}
+
+.cartao input{
+	width: 80%;
+ 	height: 30px;
+ 	background-color: #ffffA0;
+  	border: 2px solid #fd951f11;
+  	border-radius: 5px;
+  	color: #fff;
+  	font-size: 1.2em;
+  	padding: 15px;
+  	color: #000000;
+}
+
+.cartao input:focus, .cartao input:hover{
+  border-bottom: 3px solid #fd951fcc;
+}
+
+.cartao button{
+  background: none;
+  border: none;
+  width: 10%;
+  height: 10px;
+}
+
+.cartao button:hover{
+  cursor: pointer;
+}
+
+.cartao button img{
+  height: 30px;
+}
+
+.usuario{
+	width: 33%;
+	height: 100px;
+	margin: 20px;
+	background-color: #5391c7;
+  	border: 3px solid #539177;
+  	border-radius: 5px;
+}
+
+.cusuario form{
+  display: flex;
+  justify-content: space-between;
+}
+
+.usuario h2{
+  text-align: center;
+  padding:5px;
+}
+
+.usuario input{
+	width: 80%;
+ 	height: 30px;
+ 	background-color: #ffffA0;
+  	border: 2px solid #fd951f11;
+  	border-radius: 5px;
+  	color: #fff;
+  	font-size: 1.2em;
+  	padding: 15px;
+}
+
+.usuario input:focus, .usuario input:hover{
+  border-bottom: 3px solid #fd951fcc;
+}
+
+.usuario button{
+  background: none;
+  border: none;
+  width: 10%;
+  height: 10px;
+}
+
+.usuario button:hover{
+  cursor: pointer;
+}
+
+.usuario button img{
+  height: 30px;
+}
+
+.LIXO{
+	width: 33%;
+	text-align: center;
+  	height: 100px;
+ 	margin:  30px 15px 0px 15px;
+ 	background-color: #ffffA0;
+ 	border: 1px solid #fd951f11;
+ 	border-radius: 5px;
+ 	background-image: url('../img/trash.svg');
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	background-size: 50px;
+}
+
+.LIXO .soltar{
+  height: 100%;
+}
+
+@media all and (max-width: 800px){
+ 
+}
