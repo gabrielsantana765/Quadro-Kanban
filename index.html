@@ -42,15 +42,20 @@
 		<section class= "incluirCartao">
 			<div class="cartao">
 				<h2><label for="cartao">Adicionar Cartão</label></h2>
-      			<form id="adiconarCartao" action="POST">
+
+      			<form id="addCard">
       				<div class="allcard">
-      				<h3>Responsável</h3>
-					<input id="usuario" name="usuario" type="text" autocomplete="off">	
-      				<h3>Tarefa</h3>
-      				<input id="cartao" name="cartao" type="text" autocomplete="off">
+	      				<label for="user">Responsável</label>
+						<input id="user" name="user" type="text" autocomplete="off">	
 					</div>
+
+					<div class="allcard">
+	      				<label for="conteudoCartao">Tarefa</label>
+	      				<input id="conteudoCartao" name="conteudoCartao" type="text" autocomplete="off">
+					</div>
+
 					<div class="buttonCard">
-					<button type="submit"><img src="./img/plus.svg" alt="Add task" /></button>
+					<button id="addButton" type="submit"><img src="./img/plus.svg" alt="Add task" /></button>
 					</div>
 					
       			</form>

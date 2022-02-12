@@ -70,7 +70,7 @@ body{
   justify-content: space-between;
 }
 
-#adiconarCartao{
+#addCard{
     display: flex;
 }
 
@@ -130,7 +130,7 @@ body{
   height: 30px;
 }
 
-.usuario{
+.user{
 	width: 33%;
 	height: 100px;
 	margin: 20px;
@@ -139,17 +139,17 @@ body{
   	border-radius: 5px;
 }
 
-.cusuario form{
+.cuser form{
   display: flex;
   justify-content: space-between;
 }
 
-.usuario h2{
+.user h2{
   text-align: center;
   padding:5px;
 }
 
-.usuario input{
+.user input{
 	width: 80%;
  	height: 30px;
  	background-color: #ffffA0;
@@ -160,22 +160,22 @@ body{
   	padding: 15px;
 }
 
-.usuario input:focus, .usuario input:hover{
+.user input:focus, .user input:hover{
   border-bottom: 3px solid #fd951fcc;
 }
 
-.usuario button{
+.user button{
   background: none;
   border: none;
   width: 10%;
   height: 10px;
 }
 
-.usuario button:hover{
+.user button:hover{
   cursor: pointer;
 }
 
-.usuario button img{
+.user button img{
   height: 30px;
 }
 
