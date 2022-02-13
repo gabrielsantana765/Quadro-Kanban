@@ -10,38 +10,38 @@
 	</head>
 <!--  -->
 	<body>
-		<section class="quadros" > <!-- Seção dos 3 quadros -->
-			<div class="coluna">
+		<section class="boards" > <!-- Seção dos 3 boards -->
+			<div class="column">
 				<h2>A FAZER</h2>
-				<div class="soltar" id="aFazer">
+				<div class="drag" id="toDo">
 
-					<div class="cataoSolto" draggable="true">
-	          			<div class="situacao aFazer"></div>
-	          			<div class="atribuido">Nome</div>
+					<div class="dragCard" draggable="true">
+	          			<div class="status toDo"></div>
+	          			<div class="assigned">Nome</div>
 	          			<div class="content">TESTE</div>
         			</div>
 
 				</div>
 			</div>
 
-			<div class="coluna">
+			<div class="column">
 				<h2>FAZENDO</h2>
-				<div class="soltar" id="FAZENDO">
+				<div class="drag" id="doing">
 					
 				</div>
 			</div>
 
-			<div class="coluna">
+			<div class="column">
 				<h2>FEITO</h2>
-				<div class="soltar" id="FEITO">
+				<div class="drag" id="done">
 					
 				</div>
 			</div>
 		</section >
 
-		<section class= "incluirCartao">
-			<div class="cartao">
-				<h2><label for="cartao">Adicionar Cartão</label></h2>
+		<section class= "insertCard">
+			<div class="card">
+				<h2><label for="card">Adicionar Cartão</label></h2>
 
       			<form id="addCard">
       				<div class="allcard">
@@ -50,8 +50,8 @@
 					</div>
 
 					<div class="allcard">
-	      				<label for="conteudoCartao">Tarefa</label>
-	      				<input id="conteudoCartao" name="conteudoCartao" type="text" autocomplete="off">
+	      				<label for="contentCard">Tarefa</label>
+	      				<input id="contentCard" name="contentCard" type="text" autocomplete="off">
 					</div>
 
 					<div class="buttonCard">
@@ -61,9 +61,9 @@
       			</form>
 			</div>
 
-			<div class="LIXO">
+			<div class="deleteCard">
       			<h2>LIXO</h2>
-      		<div class="soltar" id="LIXO">
+      		<div class="drag" id="deleteCard">
       		</div>
       	</section>
 		<script type="text/javascript" src="./js/script.js" defer></script>

@@ -6,22 +6,22 @@ addButton.addEventListener("click", function(event){
 
 	var form = document.querySelector("#addCard");
 
-	var Responsavel = form.user.value;
-	var Tarefa = form.conteudoCartao.value;
+	var attributedUser = form.user.value;
+	var task = form.contentCard.value;
 
-	var cartaoDiv = document.createElement("div");
-	cartaoDiv.classList.add('cataoSolto');
+	var cardDiv = document.createElement("div");
+	cardDiv.classList.add('dragCard');
 
-	var ResponsavelDiv = document.createElement("div");
-	var TarefaDiv = document.createElement("div");
+	var attributedUserDiv = document.createElement("div");
+	var taskDiv = document.createElement("div");
 
-	ResponsavelDiv.textContent = Responsavel;
-	TarefaDiv.textContent=Tarefa;
+	attributedUserDiv.textContent = attributedUser;
+	taskDiv.textContent=task;
 
-	cartaoDiv.appendChild(ResponsavelDiv);
-	cartaoDiv.appendChild(TarefaDiv);
+	cardDiv.appendChild(attributedUserDiv);
+	cardDiv.appendChild(taskDiv);
 
-	var card =document.querySelector("#aFazer");
-	card.appendChild(cartaoDiv);
+	var card =document.querySelector("#toDo");
+	card.appendChild(cardDiv);
 	}
 );
