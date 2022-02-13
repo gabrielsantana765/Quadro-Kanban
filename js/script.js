@@ -13,7 +13,9 @@ addButton.addEventListener("click", function(event){
 	cardDiv.classList.add('dragCard');
 
 	var attributedUserDiv = document.createElement("div");
+	attributedUserDiv.classList.add('assigned');
 	var taskDiv = document.createElement("div");
+	taskDiv.classList.add('content');
 
 	attributedUserDiv.textContent = attributedUser;
 	taskDiv.textContent=task;

@@ -10,16 +10,19 @@
 	</head>
 <!--  -->
 	<body>
+		<h1 class="titulo">QUADRO KANBAN</h1>
 		<section class="boards" > <!-- Seção dos 3 boards -->
 			<div class="column">
 				<h2>A FAZER</h2>
 				<div class="drag" id="toDo">
 
+<!-- Exemplo de Div Cartão esperado
 					<div class="dragCard" draggable="true">
 	          			<div class="status toDo"></div>
 	          			<div class="assigned">Nome</div>
 	          			<div class="content">TESTE</div>
         			</div>
+-->
 
 				</div>
 			</div>
@@ -44,14 +47,16 @@
 				<h2><label for="card">Adicionar Cartão</label></h2>
 
       			<form id="addCard">
-      				<div class="allcard">
-	      				<label for="user">Responsável</label>
-						<input id="user" name="user" type="text" autocomplete="off">	
-					</div>
+      				<div class="valueCard">
+	      				<div class="allcard">
+		      				<label for="user">Responsável:</label>
+							<input id="user" name="user" type="text" autocomplete="off" required>	
+						</div>
 
-					<div class="allcard">
-	      				<label for="contentCard">Tarefa</label>
-	      				<input id="contentCard" name="contentCard" type="text" autocomplete="off">
+						<div class="allcard">
+		      				<label for="contentCard">Tarefa:</label>
+		      				<input id="contentCard" name="contentCard" type="text" autocomplete="off" required>
+						</div>
 					</div>
 
 					<div class="buttonCard">
